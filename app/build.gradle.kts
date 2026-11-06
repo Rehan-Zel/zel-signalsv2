@@ -11,11 +11,13 @@ android {
 
     packaging {
         resources {
-            excludes += setOf(
-                "META-INF/versions/9/OSGI-INF/MANIFEST.MF",
-                "META-INF/DEPENDENCIES",
-                "META-INF/LICENSE",
-                "META-INF/NOTICE"
+            excludes.addAll(
+                setOf(
+                    "META-INF/versions/9/OSGI-INF/MANIFEST.MF",
+                    "META-INF/DEPENDENCIES",
+                    "META-INF/LICENSE",
+                    "META-INF/NOTICE"
+                )
             )
         }
     }
